@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <include layout="@layout/search_layout_home"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/frg_home_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/spacing_normal_x"
+            android:paddingRight="@dimen/spacing_normal_x"
+            android:orientation="vertical">
+
+            <!-- 顶部导航栏 -->
+            <include layout="@layout/top_navigation_layout_home"/>
+            <!-- 每日三餐推荐 -->
+            <include layout="@layout/recommended_daily_layout_home"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

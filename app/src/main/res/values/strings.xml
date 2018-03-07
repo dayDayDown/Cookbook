@@ -5,6 +5,30 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
+    <string name="text_more">更多</string>
+
     <string name="activity_splash_description">美味无需等待</string>
     <string name="activity_splash_skip">跳过(%1$d)</string>
+
+    <!--> MainActivity <-->
+    <string name="activity_main_search">搜索菜谱、食材</string>
+    <string name="activity_main_home">首页</string>
+    <string name="activity_main_sort">分类</string>
+    <string name="activity_main_find">发现</string>
+    <string name="activity_main_member">我的</string>
+
+    <!--> Home <-->
+    <string name="frg_home_intelligent">智能组菜</string>
+    <string name="frg_home_season">当季食材</string>
+    <string name="frg_home_rank">排行榜</string>
+    <string name="frg_home_register">活动签到</string>
+    <string name="text_home_daily_recommend">每日三餐·%1$s</string>
+    <string name="text_breakfast">早餐</string>
+    <string name="text_lunch">午餐</string>
+    <string name="text_afternoon_tea">下午茶</string>
+    <string name="text_dinner">晚餐</string>
+    <string name="text_supper">宵夜</string>
+
+    <!--> Detail <-->
+    <string name="text_detail_transition_name">detailTitleTransition</string>
 </resources>

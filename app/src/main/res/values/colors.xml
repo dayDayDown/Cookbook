@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#FF4081</color>
-
+    <color name="colorBackground">#FFFFFF</color>
     <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+    <color name="colorDivider">#f9f4f4</color>
+    <color name="fontColorPrimary">#313131</color>
+
+    <!-- MainActivity -->
+    <color name="aty_main_search_layout">#F2F2F0</color>
+    <color name="fontColorUnSelected">#2c2c2c</color>
+    <color name="fontColorSelected">#1296db</color>
 </resources>
