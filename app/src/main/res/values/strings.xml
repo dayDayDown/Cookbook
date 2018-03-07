@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CookBook</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="activity_splash_description">美味无需等待</string>
+    <string name="activity_splash_skip">跳过(%1$d)</string>
+</resources>
