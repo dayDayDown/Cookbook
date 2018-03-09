@@ -6,8 +6,10 @@
     <color name="colorBackground">#FFFFFF</color>
     <color name="black_overlay">#66000000</color>
     <color name="black">#000000</color>
+    <color name="gray">#ddd</color>
     <color name="colorDivider">#f9f4f4</color>
     <color name="fontColorPrimary">#313131</color>
+    <color name="fontColorRed">#f11d1d</color>
 
     <!-- MainActivity -->
     <color name="aty_main_search_layout">#F2F2F0</color>

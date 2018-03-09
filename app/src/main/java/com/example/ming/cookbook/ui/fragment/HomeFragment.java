@@ -1,7 +1,6 @@
 package com.example.ming.cookbook.ui.fragment;
 
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -10,6 +9,7 @@ import com.example.ming.cookbook.R;
 import com.example.ming.cookbook.common.Constant;
 import com.example.ming.cookbook.presenter.BasePresenter;
 import com.example.ming.cookbook.ui.BaseFragment;
+import com.example.ming.cookbook.ui.activity.NewRecipeNameActivity;
 import com.example.ming.cookbook.ui.adapter.BaseFragmentPagerAdapter;
 import com.example.ming.cookbook.ui.widgets.EasyTabLayout;
 
@@ -144,6 +144,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener, 
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.frg_home_new_cook:
+                NewRecipeNameActivity.startActivity(getActivity());
                 break;
             case R.id.frg_home_search:
                 break;

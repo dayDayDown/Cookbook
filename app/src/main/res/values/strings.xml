@@ -10,6 +10,10 @@
     <string name="activity_splash_description">美味无需等待</string>
     <string name="activity_splash_skip">跳过(%1$d)</string>
 
+    <string name="text_cancel">取消</string>
+    <string name="text_next">继续</string>
+    <string name="text_save">保存</string>
+
     <!--> MainActivity <-->
     <string name="activity_main_search">搜索菜谱、食材</string>
     <string name="activity_main_home">首页</string>
@@ -31,4 +35,13 @@
 
     <!--> Detail <-->
     <string name="text_detail_transition_name">detailTitleTransition</string>
+    <string name="text_detail_author">作者</string>
+
+    <!--> New Recipe <-->
+    <string name="text_new_recipe_title">创建菜谱</string>
+    <string name="text_new_recipe_name_hint">写下你的菜谱名吧</string>
+    <string name="text_new_recipe_cover_hint">+菜谱封面\n或一分钟小视频</string>
+    <string name="text_new_recipe_summary_hint">输入这道美食背后的故事</string>
+    <string name="text_new_recipe_material">用料</string>
+    <string name="text_new_recipe_material_recommend">猜你可能需要用到</string>
 </resources>

@@ -7,9 +7,10 @@ import android.widget.TextView;
 
 import com.example.ming.cookbook.R;
 import com.example.ming.cookbook.common.Constant;
+import com.example.ming.cookbook.model.entity.CookDetailEntity;
 import com.example.ming.cookbook.presenter.BasePresenter;
 import com.example.ming.cookbook.ui.BaseFragment;
-import com.example.ming.cookbook.ui.activity.CookDetailActivity;
+import com.example.ming.cookbook.ui.activity.RecipeDetailActivity;
 
 import butterknife.BindView;
 
@@ -64,12 +65,17 @@ public class DailyRecommendFragment extends BaseFragment implements View.OnClick
 
     @Override
     public void onClick(View v) {
+        CookDetailEntity entity = new CookDetailEntity();
+        entity.setAuthorName("五星大厨");
+        entity.setAuthorImg("http://image.suning.cn/uimg/SDSP/player/2501.jpeg?v=1498717929625");
+        entity.setName("番茄炒蛋");
+        entity.setThumbnail("http://image.suning.cn/uimg/SDSP/player/2501.jpeg?v=1498717929625");
         switch (v.getId()){
             case R.id.frg_daily_first_cook:
-                CookDetailActivity.startActivity(getActivity(), ivFirstImage);
+                RecipeDetailActivity.startActivity(getActivity(), ivFirstImage, entity);
                 break;
             case R.id.frg_daily_second_cook:
-                CookDetailActivity.startActivity(getActivity(), ivSecondImage);
+                RecipeDetailActivity.startActivity(getActivity(), ivSecondImage, entity);
                 break;
             default:
                 break;

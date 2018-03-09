@@ -19,8 +19,10 @@
     <dimen name="spacing_tiny">4dp</dimen>
 
     <!-- font sizes -->
-    <dimen name="font_scheduler_scores">26sp</dimen>
+    <dimen name="font_xxxl">28sp</dimen>
+    <dimen name="font_xxl">26sp</dimen>
     <dimen name="font_larger">22sp</dimen>
+    <dimen name="font_large_x">20sp</dimen>
     <dimen name="font_large">18sp</dimen>
     <dimen name="font_normal">16sp</dimen>
     <dimen name="font_small">14sp</dimen>
@@ -28,6 +30,7 @@
     <dimen name="font_tiny">10sp</dimen>
 
     <!-- icon size -->
+    <dimen name="icon_xxxl">300dp</dimen>
     <dimen name="icon_xxl">160dp</dimen>
     <dimen name="icon_xl">100dp</dimen>
     <dimen name="icon_large">60dp</dimen>

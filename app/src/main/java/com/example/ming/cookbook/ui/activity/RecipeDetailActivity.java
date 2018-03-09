@@ -7,20 +7,29 @@ import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.ming.cookbook.R;
 import com.example.ming.cookbook.common.DisPlayUtil;
+import com.example.ming.cookbook.model.entity.CookDetailEntity;
 import com.example.ming.cookbook.presenter.BasePresenter;
 import com.example.ming.cookbook.ui.BaseActivity;
 
 import butterknife.BindView;
 
-public class CookDetailActivity extends BaseActivity {
+public class RecipeDetailActivity extends BaseActivity {
     @BindView(R.id.aty_detail_toolbar)
     Toolbar mToolbar;
+    @BindView(R.id.aty_detail_author_img)
+    ImageView iv_author;
+    @BindView(R.id.aty_detail_author_name)
+    TextView tv_author;
 
-    public static void startActivity(Activity activity, View transitionView){
-        Intent intent = new Intent(activity, CookDetailActivity.class);
+    private static final String COOK_DETAIL = "cookDetailEntity";
+    public static void startActivity(Activity activity, View transitionView, CookDetailEntity entity){
+        Intent intent = new Intent(activity, RecipeDetailActivity.class);
+        intent.putExtra(COOK_DETAIL, entity);
         ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(activity, transitionView, activity.getString(R.string.text_detail_transition_name));
         activity.startActivity(intent, optionsCompat.toBundle());
     }
@@ -35,7 +44,7 @@ public class CookDetailActivity extends BaseActivity {
 
     @Override
     public int getLayoutId() {
-        return R.layout.activity_cook_detail;
+        return R.layout.activity_recipe_detail;
     }
 
     @Override
@@ -55,9 +64,9 @@ public class CookDetailActivity extends BaseActivity {
                 @Override
                 public void onClick(View view) {
                     if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-                        CookDetailActivity.this.finishAfterTransition();
+                        RecipeDetailActivity.this.finishAfterTransition();
                     }else {
-                        CookDetailActivity.this.finish();
+                        RecipeDetailActivity.this.finish();
                     }
                 }
             });
